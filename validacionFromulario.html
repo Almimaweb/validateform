@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Validación</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Inicio de sesión</h1>
+            <form method="get" id="formulario1">
+                <div class="form-group">
+                    <label for="user">Nombre de usuario: </label>
+                    <input type="text" id="user" name="user" >
+                    <p class="error-feedback"></p>
+                </div>
+                <div class="form-group">
+                    <label for="passwd">Contraseña: </label>
+                    <input type="password" name="passwd" id="passwd">
+                    <p class="error-feedback"></p>
+                </div>
+                <div class="form-group">
+                    <label for="passwd2">Repite la contraseña: </label>
+                    <input type="password" name="passwd2" id="passwd2">
+                    <p class="error-feedback"></p>
+                </div>
+                <div class="form-group">
+                    <label for="fechaNac">Fecha de nacimiento:</label>
+                    <input type="date" name="fechaNac" id="fechaNac">
+                    <p class="error-feedback"></p>
+                </div>
+                    <p>
+                        Marque si desea recibir notificaciones y publicidad adaptada <br> a sus gustos  de alguna de las
+                        siguientes compañías:
+                    <br>
+                    <input type="checkbox" name="amazon" id="amazon" >
+                    <label for="amazon">Amazon  </label>
+                    <input type="checkbox" name="microsoft" id="alliexpress">
+                    <label for="alliexpress">Alliexpress</label>
+                    <input type="checkbox" name="ebay" id="ebay">
+                    <label for="ebay">Ebay</label>
+                    </p>
+                    <p>
+                    ¿Ha leído y acepta los términos de política y privacidad?
+                    <br>
+                    <input type="checkbox" name="aceptar" id="aceptar">
+                    <label for="aceptar">He leído y acepto.</label>
+                    </p>
+                <div class="form-group">
+                    <button type="submit" id="btn-submit">Enviar</button>
+                </div>
+          </form>
+    </div>
+    <div class="container2">
+        <form  method="get" id="formulario2">
+            <h2>Expresiones regulares</h2>
+            <div class="form-group">
+                <label for="codigoPostal2">Código Postal: </label>
+                <input type="text" name="codigiPostal2" id="codigoPostal2">
+                <p class="error-feedback"></p>
+            </div>
+            <div class="form-group">
+                <label for="numeroEntero">Número entero: </label>
+                <input type="text" name="numeroEntero" id="numeroEntero">
+                <p class="error-feedback"></p>
+            </div>
+            <div class="form-group">
+                <label for="numeroReal">Número real:</label>
+                <input type="text" name="numeroReal" id="numeroReal">
+                <p class="error-feedback"></p>
+            </div>
+            <div class="form-group">
+                <label for="numeroTel">Número de teléfono:</label>
+                <input type="text" name="numeroTel" id="numeroTel">
+                <p class="error-feedback"></p>
+            </div>
+            <div class="form-group">
+                <label for="numeroTelInter">Número de teléfono internacional:</label>
+                <input type="text" name="numeroTelInter" id="numeroTelInter">
+                <p class="error-feedback"></p>
+            </div>
+           <div class="form-group">
+                <label for="mail">Email:</label>
+                <input type="email" name="mail" id="mail">
+                <p class="error-feedback"></p>
+           </div>
+           <div class="form-group">
+            <label for="dni">DNI: </label>
+            <input type="text" name="dni" id="dni">
+            <p class="error-feedback"></p>
+           </div>
+           <div class="form-group">
+            <label for="url">URL: </label>
+            <input type="text" name="url" id="url">
+            <p class="error-feedback"></p>
+           </div>
+           <div class="form-group">
+            <label for="contra">Contraseña segura: </label>
+            <input type="password" name="contra" id="contra">
+            <p class="error-feedback"></p>
+           </div>
+        </form>
+        <br>
+        <div class="form-group">
+            <button type="submit" name="btn-submit2">Enviar</button>
+        </div>
+    </div>
+
+    <script src="validarformulario.js"></script>
+</body>
+</html>
